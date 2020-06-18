@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Document Browser View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="DocumentBrowserViewController" customModule="assign4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="0fo-ii-Aj5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26" y="654"/>
+        </scene>
+        <!--Document View Controller-->
+        <scene sceneID="2iE-yC-kzI">
+            <objects>
+                <viewController storyboardIdentifier="DocumentViewController" id="oiu-rR-CQk" customClass="DocumentViewController" customModule="assign4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nSB-5B-GXI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="O21-Ab-v4S">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="673"/>
+                            </mapView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="DD4-hK-xVY">
+                                <rect key="frame" x="90" y="721" width="234" height="131.33333333333337"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Kvo-01-uVf">
+                                        <rect key="frame" x="0.0" y="0.0" width="234" height="50.666666666666664"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="CvT-fs-S24">
+                                                <rect key="frame" x="0.0" y="0.0" width="234" height="20.333333333333332"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xQ-ds-Ur7">
+                                                        <rect key="frame" x="0.0" y="0.0" width="104.66666666666667" height="20.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000.00 miles" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pp0-tt-Vgd">
+                                                        <rect key="frame" x="129.66666666666666" y="0.0" width="104.33333333333334" height="20.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="VwG-c2-SpT">
+                                                <rect key="frame" x="0.0" y="30.333333333333371" width="234" height="20.333333333333329"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speed:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EyO-t4-FVp">
+                                                        <rect key="frame" x="0.0" y="0.0" width="104.66666666666667" height="20.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 mph" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSt-PH-eyK">
+                                                        <rect key="frame" x="129.66666666666666" y="0.0" width="104.33333333333334" height="20.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5ix-qQ-Xsw">
+                                        <rect key="frame" x="0.0" y="80.666666666666629" width="234" height="51.666666666666657"/>
+                                        <segments>
+                                            <segment title="Roads"/>
+                                            <segment title="Satellite"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="segmentSwitch:" destination="oiu-rR-CQk" eventType="valueChanged" id="gIX-uO-GFF"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uiJ-mJ-Tpz">
+                                <rect key="frame" x="364" y="44" width="30" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeButton:" destination="oiu-rR-CQk" eventType="touchUpInside" id="YSf-D7-8U7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50c-ZE-29I">
+                                <rect key="frame" x="20" y="41" width="46" height="66"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <state key="normal" title="＾">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="currentLocationAction:" destination="oiu-rR-CQk" eventType="touchUpInside" id="snj-0w-r18"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Oqh-gp-qAh" firstAttribute="trailing" secondItem="DD4-hK-xVY" secondAttribute="trailing" constant="90" id="0pk-h9-HJn"/>
+                            <constraint firstItem="Oqh-gp-qAh" firstAttribute="bottom" secondItem="DD4-hK-xVY" secondAttribute="bottom" constant="9.6666666666666288" id="64E-3f-vXT"/>
+                            <constraint firstItem="uiJ-mJ-Tpz" firstAttribute="leading" secondItem="Oqh-gp-qAh" secondAttribute="leading" constant="364" id="A2A-ph-Szt"/>
+                            <constraint firstItem="Oqh-gp-qAh" firstAttribute="trailing" secondItem="50c-ZE-29I" secondAttribute="trailing" constant="348" id="AVd-tq-ayP"/>
+                            <constraint firstItem="DD4-hK-xVY" firstAttribute="leading" secondItem="Oqh-gp-qAh" secondAttribute="leading" constant="90" id="AmC-wR-eoz"/>
+                            <constraint firstItem="Oqh-gp-qAh" firstAttribute="top" secondItem="50c-ZE-29I" secondAttribute="top" constant="3" id="CLF-4v-7yI"/>
+                            <constraint firstItem="O21-Ab-v4S" firstAttribute="leading" secondItem="Oqh-gp-qAh" secondAttribute="leading" id="CfG-eO-iNO"/>
+                            <constraint firstItem="Oqh-gp-qAh" firstAttribute="bottom" secondItem="O21-Ab-v4S" secondAttribute="bottom" constant="189" id="Jbk-ux-644"/>
+                            <constraint firstItem="DD4-hK-xVY" firstAttribute="top" secondItem="Oqh-gp-qAh" secondAttribute="top" constant="677" id="Q6v-60-MlC"/>
+                            <constraint firstItem="Oqh-gp-qAh" firstAttribute="top" secondItem="O21-Ab-v4S" secondAttribute="top" constant="44" id="REX-7G-Dh3"/>
+                            <constraint firstItem="Oqh-gp-qAh" firstAttribute="bottom" secondItem="50c-ZE-29I" secondAttribute="bottom" constant="755" id="V4P-4T-AFu"/>
+                            <constraint firstItem="uiJ-mJ-Tpz" firstAttribute="top" secondItem="Oqh-gp-qAh" secondAttribute="top" id="cZd-JF-MbZ"/>
+                            <constraint firstItem="50c-ZE-29I" firstAttribute="leading" secondItem="Oqh-gp-qAh" secondAttribute="leading" constant="20" id="jVd-5V-cCo"/>
+                            <constraint firstItem="Oqh-gp-qAh" firstAttribute="trailing" secondItem="O21-Ab-v4S" secondAttribute="trailing" id="nqA-hO-sk6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Oqh-gp-qAh"/>
+                    </view>
+                    <connections>
+                        <outlet property="closeButtonOutlet" destination="uiJ-mJ-Tpz" id="XmB-OZ-dDo"/>
+                        <outlet property="currentLocationButton" destination="50c-ZE-29I" id="Esi-Oe-396"/>
+                        <outlet property="distanceOutlet" destination="Pp0-tt-Vgd" id="ER8-1o-M8d"/>
+                        <outlet property="mapOutlet" destination="O21-Ab-v4S" id="1E1-sB-Smq"/>
+                        <outlet property="mapSegmentOutlet" destination="5ix-qQ-Xsw" id="82U-w7-P13"/>
+                        <outlet property="speedOutlet" destination="JSt-PH-eyK" id="pGY-g4-irm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QTe-uN-ud1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1018.840579710145" y="653.57142857142856"/>
+        </scene>
+    </scenes>
+</document>
